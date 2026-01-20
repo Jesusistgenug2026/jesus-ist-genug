@@ -11,7 +11,7 @@
 <style>
 /* Grundlayout */
 body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#f2f2f2; color:#333; }
-header.site-header { background: linear-gradient(90deg,#ff9966,#ff5e62); color:white; text-align:center; padding:60px 20px; border-bottom-left-radius:20px; border-bottom-right-radius:20px; }
+header.site-header {background:linear-gradient(90deg, #ff512f, #f09819); color:white; text-align:center; padding: 20px 0; border-bottom-left-radius:20px; border-bottom-right-radius:20px; }
 header.site-header h1 { font-family:'Montserrat',sans-serif; font-size:48px; font-weight:700; margin:0; }
 header.site-header .subtitle { font-size:24px; margin-top:10px; font-style:italic; }
 
@@ -24,7 +24,11 @@ header.site-header .subtitle { font-size:24px; margin-top:10px; font-style:itali
   display: block;            /* Block-Element sicherstellen */
   max-width: 90%;            /* verhindert zu breites Rutschen auf großen Screens */
 }
-
+color: white;                        /* Textfarbe */
+  background: linear-gradient(90deg, #ff512f, #f09819); /* Rot-Orange Verlauf */
+  padding: 20px 0;                     /* Abstand oben & unten */
+  border-radius: 12px;                 /* leicht abgerundete Ecken */
+  
 /* Navigation */
 .navbar { list-style:none; margin:0; padding:0; background:#007acc; text-align:center; }
 .navbar li { display:inline-block; }
@@ -245,6 +249,7 @@ navLinks.forEach(link=>{
 
 </body>
 </html>
+
 
 
 
