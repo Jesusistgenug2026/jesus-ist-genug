@@ -16,12 +16,14 @@ header.site-header h1 { font-family:'Montserrat',sans-serif; font-size:48px; fon
 header.site-header .subtitle { font-size:24px; margin-top:10px; font-style:italic; }
 
 .header-title {
-  text-align: center;     /* Alles mittig */
-  font-size: 3rem;        /* Große, fette Typographie */
-  font-weight: 800;       /* fett */
-  line-height: 1.2;       /* Abstand zwischen den Zeilen */
-  margin: 0 auto;         /* Zentriert im Container */
-}  
+  text-align: center;        /* Text mittig */
+  font-size: 3rem;           /* große Typographie */
+  font-weight: 800;          /* fett */
+  line-height: 1.2;          /* Abstand zwischen den Zeilen */
+  margin: 0 auto;            /* Zentriert im Container */
+  display: block;            /* Block-Element sicherstellen */
+  max-width: 90%;            /* verhindert zu breites Rutschen auf großen Screens */
+}
 
 /* Navigation */
 .navbar { list-style:none; margin:0; padding:0; background:#007acc; text-align:center; }
@@ -67,8 +69,12 @@ footer a:hover { text-decoration:underline; }
 #spenden { background:#fff9e6; }
 #suchende { background:#ffe6f2; }
 
-@media (max-width: 768px) {
-
+@media (max-width: 1200px) {
+header-title {
+    font-size: 4rem;       /* größer auf großen Bildschirmen */
+    max-width: 70%;        /* noch zentrierter, nicht über die ganze Breite */
+  }
+}
   nav ul {
     flex-direction: column;
     gap: 10px;
@@ -239,5 +245,6 @@ navLinks.forEach(link=>{
 
 </body>
 </html>
+
 
 
