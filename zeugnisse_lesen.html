@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Zeugnisse lesen | Jesus ist genug</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .zeugnis-card {
+      background: white;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 30px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      animation: fadeUp 0.8s ease;
+    }
+
+    .zeugnis-text {
+      max-height: 90px;
+      overflow: hidden;
+      transition: max-height 0.6s ease;
+    }
+
+    .zeugnis-card.open .zeugnis-text {
+      max-height: 2000px;
+    }
+
+    .mehr-btn {
+      margin-top: 15px;
+      background: #ff7eb3;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .mehr-btn:hover {
+      background: #ff5fa2;
+    }
+
+    .top-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #ff7eb3;
+      color: white;
+      border: none;
+      padding: 14px 18px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="section" style="text-align:center;">
+  <h1>📖 Zeugnisse</h1>
+  <p><i>Gott wirkt auch heute. Lass dich ermutigen.</i></p>
+
+  <a href="suchende.html" class="btn btn-rosa-outline">
+    ← Zurück zu Suchende
+  </a>
+</header>
+
+<section class="section">
+
+  <!-- ZEUGNIS -->
+  <div class="zeugnis-card">
+    <h3>Anna (28)</h3>
+    <div class="zeugnis-text">
+      <p>
+        Ich war innerlich leer und hoffnungslos.
+        Durch Jesus habe ich neuen Sinn gefunden.
+        Gott hat mein Herz Schritt für Schritt geheilt
+        und mir Frieden geschenkt, den ich vorher nicht kannte.
+      </p>
+    </div>
+    <button class="mehr-btn" onclick="toggleZeugnis(this)">Mehr anzeigen</button>
+  </div>
+
+  <!-- WEITERES ZEUGNIS -->
+  <div class="zeugnis-card">
+    <h3>Markus (34)</h3>
+    <div class="zeugnis-text">
+      <p>
+        Ich hatte Angst vor der Zukunft.
+        Doch Gott hat mir im Gebet gezeigt,
+        dass ich nicht alleine bin.
+        Heute vertraue ich Jesus mein Leben an.
+      </p>
+    </div>
+    <button class="mehr-btn" onclick="toggleZeugnis(this)">Mehr anzeigen</button>
+  </div>
+
+</section>
+
+<button class="top-btn" onclick="scrollTop()">↑</button>
+
+<script>
+function toggleZeugnis(btn) {
+  const card = btn.parentElement;
+  card.classList.toggle("open");
+  btn.innerText = card.classList.contains("open")
+    ? "Weniger anzeigen"
+    : "Mehr anzeigen";
+}
+
+function scrollTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>

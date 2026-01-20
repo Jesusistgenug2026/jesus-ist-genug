@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Zeugnis einreichen | Jesus ist genug</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+      animation: fadeUp 0.8s ease;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 18px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #ff7eb3;
+      color: white;
+      border: none;
+      padding: 14px;
+      width: 100%;
+      border-radius: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background: #ff5fa2;
+    }
+
+    .kontakt {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .kontakt a {
+      color: #ff7eb3;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="section" style="text-align:center;">
+  <h1>📝 Zeugnis einreichen</h1>
+  <p><i>Deine Geschichte kann Hoffnung schenken.</i></p>
+
+  <a href="suchende.html" class="btn btn-rosa-outline">
+    ← Zurück zu Suchende
+  </a>
+</header>
+
+<section class="section">
+
+  <form action="https://formspree.io/f/xlgglrge" method="POST">
+    <input type="hidden" name="_subject" value="Neues Zeugnis über die Website">
+    <input type="text" name="name" placeholder="Dein Name (optional)">
+    <input type="email" name="email" placeholder="Deine E-Mail (optional)">
+
+    <textarea name="zeugnis" rows="6" placeholder="Dein Zeugnis" required></textarea>
+
+    <button type="submit">Zeugnis senden</button>
+  </form>
+
+  <div class="kontakt">
+    <h2>📩 Kontakt</h2>
+    <p>
+      Oder schreibe direkt:
+      <br>
+      <a href="mailto:benkoerner99@gmail.com">benkoerner99@gmail.com</a>
+    </p>
+  </div>
+
+</section>
+
+</body>
+</html>

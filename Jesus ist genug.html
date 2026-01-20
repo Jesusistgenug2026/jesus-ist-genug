@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesus ist genug - Startseite</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+/* Grundlayout */
+body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#f2f2f2; color:#333; }
+header.site-header { background: linear-gradient(90deg,#ff9966,#ff5e62); color:white; text-align:center; padding:60px 20px; border-bottom-left-radius:20px; border-bottom-right-radius:20px; }
+header.site-header h1 { font-family:'Montserrat',sans-serif; font-size:48px; font-weight:700; margin:0; }
+header.site-header .subtitle { font-size:24px; margin-top:10px; font-style:italic; }
+
+/* Navigation */
+.navbar { list-style:none; margin:0; padding:0; background:#007acc; text-align:center; }
+.navbar li { display:inline-block; }
+.navbar li a { display:block; color:white; text-decoration:none; padding:14px 20px; font-weight:bold; transition:0.3s; }
+.navbar li a:hover { background:#005f99; border-radius:5px; }
+
+/* Sections */
+section { padding:60px 20px; margin:20px auto; max-width:900px; border-radius:10px; background:white; box-shadow:0 0 15px rgba(0,0,0,0.1); opacity:0; transform:translateY(50px); transition: all 0.8s ease-out; }
+section.visible { opacity:1; transform:translateY(0); }
+section h2 { font-family:'Montserrat',sans-serif; font-size:36px; display:flex; align-items:center; gap:10px; }
+section p { font-size:18px; line-height:1.6; }
+
+/* Karten */
+.card { background:white; padding:15px; margin:15px 0; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.15); transition: transform 0.3s, box-shadow 0.3s; }
+.card:hover { transform:translateY(-5px); box-shadow:0 8px 16px rgba(0,0,0,0.25); }
+.card a { text-decoration:none; font-size:18px; color:#007acc; }
+.card a:hover { text-decoration:underline; }
+
+/* Buttons */
+.button { display:inline-block; background-color:#007acc; color:white; padding:12px 25px; border-radius:8px; font-weight:bold; text-decoration:none; box-shadow:0 4px 6px rgba(0,0,0,0.2); transition: all 0.3s; }
+.button:hover { background-color:#005f99; transform:translateY(-3px); box-shadow:0 6px 12px rgba(0,0,0,0.3); }
+
+/* Form */
+input, textarea { width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc; }
+
+/* Nach oben Button */
+#scrollTopBtn { display:none; position:fixed; bottom:30px; right:30px; z-index:100; background-color:#00bfff; color:white; border:none; padding:14px 18px; border-radius:50%; font-size:22px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.3); transition:0.3s; }
+#scrollTopBtn:hover { background-color:#0099cc; transform:translateY(-2px); }
+
+/* Footer */
+footer { text-align:center; padding:30px 20px; background:#007acc; color:white; }
+footer a { color:white; margin:0 10px; text-decoration:none; }
+footer a:hover { text-decoration:underline; }
+
+/* Section-Farben */
+#welcome { background:#fff0f5; }
+#videos { background:#ffe6e6; }
+#musik { background:#e6ffe6; }
+#podcasts { background:#e6f0ff; }
+#gebetsanliegen { background:#f2e6ff; }
+#kontakt { background:#ffffff; }
+#spenden { background:#fff9e6; }
+#suchende { background:#ffe6f2; }
+
+@media (max-width: 768px) {
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .button-group {
+    justify-content: center;
+  }
+  .section {
+    padding: 40px 15px;
+  }
+}
+/* ========== GLOBAL LAYOUT (ALLE SEITEN) ========== */
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #222;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  font-weight: 800;
+  margin-bottom: 0.5em;
+}
+
+p {
+  max-width: 750px;
+}
+
+</style>
+</head>
+<body>
+
+<header class="site-header">
+<h1>Jesus ist genug</h1>
+<p class="subtitle">Mit Gott unterwegs</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+<ul class="navbar">
+    <li><a href="#videos">Videos</a></li>
+    <li><a href="#musik">Musik</a></li>
+    <li><a href="#podcasts">Podcasts</a></li>
+    <li><a href="#gebetsanliegen">Gebetsanliegen</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+    <li><a href="#spenden">Spenden</a></li>
+    <li><a href="suchende.html">Suchende</a></li>
+</ul>
+</nav>
+
+<section id="welcome">
+<h2><i class="fas fa-home"></i> Herzlich Willkommen</h2>
+<p>Herzlich Willkommen auf dieser Webseite. Hier hast du alles, was dein Herz begehrt: Videos, die dir das Herz Gottes zeigen, Musik, die dein Herz bewegt, Podcasts, die dich motivieren, Gebetsanliegen teilen, damit wir füreinander da sind. Und für dich lieber Suchender gibt es einen extra Reiter, dort findest du Antworten auf deine Fragen.</p>
+</section>
+
+<section id="videos">
+<h2><i class="fab fa-youtube"></i> Videos</h2>
+<div class="card"><a href="https://youtu.be/CN1aZpGzDg0?si=TYxQpOBQSYydMyv5" target="_blank">Gibt es Gott?</a></div>
+<div class="card"><a href="https://youtu.be/ayBXOq0bnNg?si=8CAyaOB9NLvx9Ym_" targer="_blank">Warum das menschliche Herz böse ist</a></div>
+<div class="card"><a href="https://youtu.be/YbWf0PW5-Xc?si=lpzNG5rAFvVbQbT9" target="_blank">Wie kann ich gerettet werden?</a></div>
+<div class="card"><a href="https://youtu.be/3qTeXr5_T74?si=i7vT_q0S5XWxZG15" target="_blank">Der Kampf mit der Sünde</a></div>
+<div class="card"><a href="https://youtu.be/W67v4Sl_cc8?si=72kMgRMcsdRTi8BD" target="_blank">Wie erlebe ich die Neugeburt?</a></div>
+<div class="card"><a href="https://youtu.be/HZP67yn1voE?si=OjEeR1U3JnGiruLm" target="_blank">Wie werde ich ein Nachfolger Jesu?</a></div>
+<div class="card"><a href="https://youtu.be/NTFUBl11HSA?si=62BNvL_fY4tDu7gb" target="_blank">Das Evangelium von Jesus Christus</a></div>
+<div class="card"><a href="https://youtu.be/f3I1tDt9WSQ?si=db-aWdYiDKvHuUSW" target="_blank">Was bringt es mir ein Christ zu sein?</a></div>
+<div class="card"><a href="https://youtu.be/VlnfdcihX-k?si=jUnCNzRs9Lfaq9iJ" target="_blank">Wer ist Gott der Vater?</a></div>
+<div class="card"><a href="https://youtu.be/7MMhpCQaXA8?si=EjOikWTCXFTA5Gwh" target="_blank">Körper, Seele, Geist - ein augenöffnendes Video</a></div>
+<div class="card"><a href="https://youtu.be/6lfF9N_YEAo?si=xfpFNxeLPS-DFiLw" target="_blank">"Ich bin" Was Jesus über sich selbst sagt verändert alles.</a></div>
+<div class="card"><a href="https://youtu.be/E6IKzxxfv8Y?si=1KS8EDpRO1soTiFS" target="_blank">Warum Jesu Wunder mehr sind als nur Machtdemonstrationen.</a></div>
+</section>
+
+<section id="musik">
+<h2><i class="fas fa-music"></i> Musik</h2>
+<div class="card"><a href="https://open.spotify.com/album/DEIN_ALBUM_ID" target="_blank">Album 1</a></div>
+</section>
+
+<section id="podcasts">
+<h2><i class="fas fa-podcast"></i> Podcasts</h2>
+<div class="card"><a href="#" target="_blank">Podcast Folge 1</a></div>
+</section>
+
+<section id="gebetsanliegen">
+<h2><i class="fas fa-praying-hands"></i> Gebetsanliegen</h2>
+<form action="https://formspree.io/f/mkoobabz" method="POST">
+<input type="text" name="name" placeholder="Dein Name" required>
+<input type="email" name="email" placeholder="Deine E-Mail" required>
+<textarea name="message" rows="6" placeholder="Dein Gebetsanliegen" required></textarea>
+<button type="submit" class="button">Senden</button>
+</form>
+</section>
+
+<section id="kontakt">
+<h2><i class="fas fa-envelope"></i> Kontakt</h2>
+<p>Email: <a href="mailto:deine.email@gmail.com">benkoerner99@gmail.com</a></p>
+<p>Telefon: 0157 50425630</p>
+</section>
+
+<section id="spenden">
+<h2><i class="fas fa-donate"></i> Spenden</h2>
+<a href="#" class="button">Jetzt spenden</a>
+</section>
+
+<section id="suchende">
+<h2><i class="fas fa-search"></i> Suchende</h2>
+<p><a href="suchende.html" class="button">Zur Suchende-Seite</a></p>
+</section>
+
+<button id="scrollTopBtn" title="Nach oben">⬆</button>
+
+<footer>
+&copy; 2026 Jesus ist genug | <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Impressum</a>
+</footer>
+
+<script>
+const sections = document.querySelectorAll('section');
+function checkVisibility() {
+    const triggerBottom = window.innerHeight*0.85;
+    sections.forEach(section=>{
+        const sectionTop = section.getBoundingClientRect().top;
+        if(sectionTop < triggerBottom) section.classList.add('visible');
+    });
+}
+window.addEventListener('scroll', checkVisibility);
+window.addEventListener('load', checkVisibility);
+
+// Nach oben Button
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+window.addEventListener('scroll', () => {
+    if(document.body.scrollTop>200 || document.documentElement.scrollTop>200){
+        scrollTopBtn.style.display="block";
+    } else { scrollTopBtn.style.display="none"; }
+});
+scrollTopBtn.addEventListener('click', ()=>{ window.scrollTo({top:0, behavior:"smooth"}); });
+
+// Smooth Scroll Navigation
+const navLinks = document.querySelectorAll('.navbar a');
+navLinks.forEach(link=>{
+    link.addEventListener('click', e=>{
+        if(link.getAttribute('href').startsWith("#")){
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            targetSection.scrollIntoView({behavior:"smooth"});
+        }
+    });
+});
+</script>
+
+</body>
+</html>

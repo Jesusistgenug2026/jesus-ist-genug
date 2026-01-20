@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suchende - Jesus ist genug</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+<!-- FontAwesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<style>
+/* Grundlayout */
+body { font-family:'Roboto',sans-serif; margin:0; padding:0; background:#ffe6f2; color:#333; }
+header.site-header { background: linear-gradient(90deg,#ff99cc,#ff66aa); color:white; text-align:center; padding:60px 20px; border-bottom-left-radius:20px; border-bottom-right-radius:20px; }
+header.site-header h1 { font-family:'Montserrat',sans-serif; font-size:48px; font-weight:700; margin:0; }
+header.site-header .subtitle { font-size:24px; margin-top:10px; font-style:italic; }
+
+/* Navigation */
+.navbar { list-style:none; margin:0; padding:0; background:#007acc; text-align:center; }
+.navbar li { display:inline-block; }
+.navbar li a { display:block; color:white; text-decoration:none; padding:14px 20px; font-weight:bold; transition:0.3s; }
+.navbar li a:hover { background:#005f99; border-radius:5px; }
+
+/* Sections */
+section { padding:60px 20px; margin:20px auto; max-width:900px; border-radius:10px; background:white; box-shadow:0 0 15px rgba(0,0,0,0.1); opacity:0; transform:translateY(50px); transition: all 0.8s ease-out; }
+section.visible { opacity:1; transform:translateY(0); }
+section h2 { font-family:'Montserrat',sans-serif; font-size:32px; display:flex; align-items:center; gap:10px; }
+section p { font-size:18px; line-height:1.6; }
+
+/* Karten */
+.card { background:white; padding:15px; margin:15px 0; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.15); transition: transform 0.3s, box-shadow 0.3s; }
+.card:hover { transform:translateY(-5px); box-shadow:0 8px 16px rgba(0,0,0,0.25); }
+.card a { text-decoration:none; font-size:18px; color:#ff3399; }
+.card a:hover { text-decoration:underline; }
+
+/* Buttons */
+.button { display:inline-block; background-color:#ff3399; color:white; padding:12px 25px; border-radius:8px; font-weight:bold; text-decoration:none; box-shadow:0 4px 6px rgba(0,0,0,0.2); transition: all 0.3s; }
+.button:hover { background-color:#cc0077; transform:translateY(-3px); box-shadow:0 6px 12px rgba(0,0,0,0.3); }
+
+/* Form */
+input, textarea { width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc; }
+
+/* Nach oben Button */
+#scrollTopBtn { display:none; position:fixed; bottom:30px; right:30px; z-index:100; background-color:#ff3399; color:white; border:none; padding:14px 18px; border-radius:50%; font-size:22px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.3); transition:0.3s; }
+#scrollTopBtn:hover { background-color:#cc0077; transform:translateY(-2px); }
+
+/* Footer */
+footer { text-align:center; padding:30px 20px; background:#007acc; color:white; }
+footer a { color:white; margin:0 10px; text-decoration:none; }
+footer a:hover { text-decoration:underline; }
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.btn {
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+.btn-rosa {
+  background: #ff7eb3;
+  color: white;
+}
+.btn-rosa-outline {
+  border: 2px solid #ff7eb3;
+  color: #ff7eb3;
+  background: transparent;
+}
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+@media (max-width: 768px) {
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .button-group {
+    justify-content: center;
+  }
+
+  .section {
+    padding: 40px 15px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+    <h1>Suchende</h1>
+    <p class="subtitle">Antworten und Inspiration für dein Herz</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+<ul class="navbar">
+    <li><a href="index.html"><i class="fas fa-home"></i> Startseite</a></li>
+    <li><a href="#videos-suchende">Videos</a></li>
+    <li><a href="#musik-suchende">Musik</a></li>
+    <li><a href="#podcasts-suchende">Podcasts</a></li>
+    <li><a href="#fragenformular">Fragenformular</a></li>
+    <li><a href="#zeugnisse">Zeugnisse</a></li>
+</ul>
+</nav>
+
+<!-- Videos -->
+<section id="videos-suchende">
+    <h2><i class="fab fa-youtube"></i> Videos für Suchende</h2>
+    <div class="card"><a href="https://www.youtube.com/watch?v=DEIN_VIDEO_ID" target="_blank">Video 1</a></div>
+    <div class="card"><a href="https://www.youtube.com/watch?v=DEIN_VIDEO_ID" target="_blank">Video 2</a></div>
+</section>
+
+<!-- Musik -->
+<section id="musik-suchende">
+    <h2><i class="fas fa-music"></i> Musik für Suchende</h2>
+    <div class="card"><a href="https://open.spotify.com/album/DEIN_ALBUM_ID" target="_blank">Album 1</a></div>
+    <div class="card"><a href="https://open.spotify.com/track/DEIN_SONG_ID" target="_blank">Single 1</a></div>
+</section>
+
+<!-- Podcasts -->
+<section id="podcasts-suchende">
+    <h2><i class="fas fa-podcast"></i> Podcasts für Suchende</h2>
+    <div class="card"><a href="#" target="_blank">Podcast Folge 1</a></div>
+    <div class="card"><a href="#" target="_blank">Podcast Folge 2</a></div>
+</section>
+
+<!-- Fragenformular -->
+<section id="fragenformular">
+    <h2><i class="fas fa-question-circle"></i> Stelle deine Fragen</h2>
+    <form action="https://formspree.io/f/xvzzqpaq" method="POST">
+        <input type="text" name="name" placeholder="Dein Name" required>
+        <input type="email" name="email" placeholder="Deine E-Mail" required>
+        <input type="hidden" name="_subject" value="Neue Frage über die Website">
+        <textarea name="question" rows="6" placeholder="Deine Frage" required></textarea>
+        <button type="submit" class="button">Senden</button>
+    </form>
+</section>
+
+<!-- Zeugnisse -->
+<section id="zeugnisse" class="section suchende-section">
+  <h2> Zeugnisse</h2>
+  <p>Ermutigende Geschichten von Menschen mit Gott.</p>
+
+  <div class="button-group">
+    <a href="zeugnisse_lesen.html" class="btn btn-rosa">
+      Zeugnisse lesen
+    </a>
+
+    <a href="zeugnisse_einreichen.html" class="btn btn-rosa-outline">
+      Zeugnis einreichen
+    </a>
+  </div>
+</section>
+
+<section id="kontakt">
+<h2><i class="fas fa-envelope"></i> Kontakt</h2>
+<p>Email: <a href="mailto:deine.email@gmail.com">benkoerner99@gmail.com</a></p>
+<p>Telefon: 0157 50425630</p>
+</section>
+
+<!-- Nach oben Button -->
+<button id="scrollTopBtn" title="Nach oben">⬆</button>
+
+<!-- Footer -->
+<footer>
+    &copy; 2026 Jesus ist genug | <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Impressum</a>
+</footer>
+
+<script>
+// Section Animation
+const sections = document.querySelectorAll('section');
+function checkVisibility() {
+    const triggerBottom = window.innerHeight*0.85;
+    sections.forEach(section=>{
+        const sectionTop = section.getBoundingClientRect().top;
+        if(sectionTop < triggerBottom) section.classList.add('visible');
+    });
+}
+window.addEventListener('scroll', checkVisibility);
+window.addEventListener('load', checkVisibility);
+
+// Nach oben Button
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+window.addEventListener('scroll', () => {
+    if(document.body.scrollTop>200 || document.documentElement.scrollTop>200){
+        scrollTopBtn.style.display="block";
+    } else { scrollTopBtn.style.display="none"; }
+});
+scrollTopBtn.addEventListener('click', ()=>{ window.scrollTo({top:0, behavior:"smooth"}); });
+
+// Smooth Scroll Navigation innerhalb der Seite
+const navLinks = document.querySelectorAll('.navbar a');
+navLinks.forEach(link=>{
+    link.addEventListener('click', e=>{
+        if(link.getAttribute('href').startsWith("#")){
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            targetSection.scrollIntoView({behavior:"smooth"});
+        }
+    });
+});
+</script>
+
+</body>
+</html>
